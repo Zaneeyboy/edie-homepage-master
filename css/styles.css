@@ -5,6 +5,22 @@
     margin:0;
     padding:0;
 }
+/* Navbar Toggler */
+.fa-bars{
+    display:none;
+}
+
+.fa-times{
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size:2rem;
+    display:none;
+}
+
+#toggle-menu{
+    display:none;
+}
 
 /* Scrollbar */
 body::-webkit-scrollbar{
@@ -97,6 +113,23 @@ form>button{
     font-style:normal;
     font-weight:500;
     list-style:none;
+}
+
+#nav-toggle{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family:'Poppins',
+    sans-serif;
+    font-size:1.5rem;
+    font-style:normal;
+    font-weight:500;
+    list-style:none;
+    margin-top:1.5rem;
+}
+
+.nav-toggle-link{
+    line-height:2.5rem;
 }
 
 .nav-link:nth-child(2),.nav-link:nth-child(4){
@@ -498,7 +531,12 @@ footer{
 
 /* Media Queries */
 
-@media only screen and (max-width:1365px){
+@media only screen and (max-width:1365px) and (min-width:1151px){
+        /* Show toggler */
+        #toggler{
+            display:none;
+        }
+    
     /* Forms */
     form>input{
         width:17rem;
@@ -574,6 +612,14 @@ footer{
      }
 
      /* Show toggler */
+         /* Show toggler */
+         .fa-bars {
+             display: inline-block;
+             align-self: center;
+             justify-content: center;
+             font-size: 2rem;
+             cursor: pointer;
+         }
 
      /* Main Section */
      .tagline {
@@ -678,6 +724,14 @@ footer{
     }
 
     /* Show toggler */
+
+    .fa-bars{
+        display:inline-block;
+        align-self: center;
+        justify-content: center;
+        font-size:2rem;
+        cursor: pointer;
+    }
 
     /* Main Section */
     .tag{
@@ -867,6 +921,13 @@ footer{
     }
 
     /* Show toggler */
+    .fa-bars {
+        display: inline-block;
+        align-self: center;
+        justify-content: center;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 
     /* Main Section */
     .hook{
@@ -1080,6 +1141,13 @@ footer{
     }
 
     /* Show toggler */
+    .fa-bars {
+        display: inline-block;
+        align-self: center;
+        justify-content: center;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 
     /* Main Section */
     .hook {

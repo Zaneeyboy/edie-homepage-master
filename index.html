@@ -9,6 +9,7 @@
     />
 
     <link rel="icon" href="./images/devchallenges.png" />
+    <script src="https://kit.fontawesome.com/bc2fde1916.js" crossorigin="anonymous"></script>
 
     <link
       rel="shortcut icon"
@@ -29,6 +30,8 @@
     <header class="header-padding">
       <nav class="navbar">
         <a href="#" class="navbar-brand brand">Edie</a>
+        <i class="fas fa-bars" id="toggler"></i>
+        <i class="fas fa-times" id="toggle-off"></i>
           <ul class="nav">
             <li class="nav-link"><a href="#" class="nav-item active">Home</a></li>
             <li class="nav-link"><a href="#" class="nav-item">Services</a></li>
@@ -37,6 +40,15 @@
             <li class="nav-link"><a href="#" class="nav-item">Contact</a></li>
           </ul>
       </nav>
+      <div id="toggle-menu">
+        <ul id="nav-toggle">
+          <li class="nav-toggle-link"><a href="#" class="nav-item active">Home</a></li>
+            <li class="nav-toggle-link"><a href="#" class="nav-item">Services</a></li>
+            <li class="nav-toggle-link"><a href="#" class="nav-item">Our Works</a></li>
+            <li class="nav-toggle-link"><a href="#" class="nav-item">Clients</a></li>
+            <li class="nav-toggle-link"><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -233,5 +245,6 @@
         <p>Big Twig @DevChallenges.io</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
