@@ -541,6 +541,20 @@ footer{
 
 /* Media Queries */
 
+@media only screen and (min-width:1366px){
+    #toggler{
+        display:none;
+    }
+
+    #toggle-off{
+        display:none;
+    }
+
+    #middle-img{
+        width:100%;
+    }
+}
+
 @media only screen and (max-width:1365px) and (min-width:1151px){
     #toggler{
         display:none;
