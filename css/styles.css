@@ -6,8 +6,19 @@
     padding:0;
 }
 /* Navbar Toggler */
-.fa-bars{
+#toggler{
     display:none;
+}
+
+#toggle-off{
+    display:none;
+}
+
+.fa-bars{
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size:2rem;
 }
 
 .fa-times{
@@ -15,7 +26,6 @@
     justify-content: center;
     cursor: pointer;
     font-size:2rem;
-    display:none;
 }
 
 #toggle-menu{
@@ -532,10 +542,9 @@ footer{
 /* Media Queries */
 
 @media only screen and (max-width:1365px) and (min-width:1151px){
-        /* Show toggler */
-        #toggler{
-            display:none;
-        }
+    #toggler{
+        display:none;
+    }
     
     /* Forms */
     form>input{
@@ -588,7 +597,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:1150px){
+@media only screen and (max-width:1150px) and (min-width:1001px){
      /* Forms */
      form>input {
          width: 15rem;
@@ -612,14 +621,9 @@ footer{
      }
 
      /* Show toggler */
-         /* Show toggler */
-         .fa-bars {
-             display: inline-block;
-             align-self: center;
-             justify-content: center;
-             font-size: 2rem;
-             cursor: pointer;
-         }
+    #toggler{
+        display:inline-block;
+    }
 
      /* Main Section */
      .tagline {
@@ -690,7 +694,7 @@ footer{
      }
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1000px) and (min-width:651px) {
 
     /* Forms */
     form>input {
@@ -725,13 +729,10 @@ footer{
 
     /* Show toggler */
 
-    .fa-bars{
-        display:inline-block;
-        align-self: center;
-        justify-content: center;
-        font-size:2rem;
-        cursor: pointer;
+    #toggler {
+        display: inline-block;
     }
+
 
     /* Main Section */
     .tag{
@@ -887,7 +888,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:650px) and (min-width:451px) {
 
     /* Forms */
     form>input {
@@ -921,12 +922,8 @@ footer{
     }
 
     /* Show toggler */
-    .fa-bars {
+    #toggler {
         display: inline-block;
-        align-self: center;
-        justify-content: center;
-        font-size: 2rem;
-        cursor: pointer;
     }
 
     /* Main Section */
@@ -1103,7 +1100,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:450px) and (min-width:320px){
 
     /* Forms */
     form>input {
@@ -1141,13 +1138,10 @@ footer{
     }
 
     /* Show toggler */
-    .fa-bars {
+    #toggler {
         display: inline-block;
-        align-self: center;
-        justify-content: center;
-        font-size: 2rem;
-        cursor: pointer;
     }
+
 
     /* Main Section */
     .hook {
